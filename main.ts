@@ -43,5 +43,3 @@ if (lightLevel > 104) {
   neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
   neopixelStrip.show()
 }
-
-
