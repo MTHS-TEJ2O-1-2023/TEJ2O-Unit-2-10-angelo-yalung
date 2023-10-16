@@ -18,7 +18,6 @@ neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
 neopixelStrip.show()
-basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function() {
 if (lightLevel <= 51) {
@@ -29,7 +28,7 @@ if (lightLevel <= 51) {
   neopixelStrip.show()
 }
 
-if (lightLevel > 52) {
+if (lightLevel >= 52) {
   neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
   neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
   neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -38,7 +37,7 @@ if (lightLevel > 52) {
   basic.showNumber(lightLevel)
 }
 
-if (lightLevel > 104) {
+if (lightLevel >= 104) {
   neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
   neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
   neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -47,7 +46,7 @@ if (lightLevel > 104) {
   basic.showNumber(lightLevel)
 }
 
-if (lightLevel > 156) {
+if (lightLevel >= 156) {
   neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
   neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
   neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
@@ -56,7 +55,7 @@ if (lightLevel > 156) {
   basic.showNumber(lightLevel)
 }
 
-if (lightLevel > 208) {
+if (lightLevel >= 208) {
   neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
   neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
   neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
