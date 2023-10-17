@@ -24,16 +24,18 @@ basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.A, function() {
 
   // if the light level is less than or equal to 51
-if (lightLevel <= 51) {
-  neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.show()
+  if (lightLevel <= 51) {
+    basic.showNumber(0)
+    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.show()
 }
 
   // if the light level is less than or equal to 52
   if (lightLevel >= 52) {
+    basic.showNumber(1)
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -44,6 +46,7 @@ if (lightLevel <= 51) {
 
   // if the light level is less than or equal to 104
   if (lightLevel >= 104) {
+    basic.showNumber(2)
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
     neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -54,6 +57,7 @@ if (lightLevel <= 51) {
 
   // if the light level is greater than or equal to 156
   if (lightLevel >= 156) {
+    basic.showNumber(3)
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
     neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
@@ -64,12 +68,12 @@ if (lightLevel <= 51) {
 
   // if the light level is greater than or equal to 208
   if (lightLevel >= 208) {
+    basic.showNumber(4)
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
     neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Green))
     neopixelStrip.show()
-    basic.showNumber(lightLevel)
 }
 })
 
